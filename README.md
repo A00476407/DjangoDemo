@@ -19,20 +19,44 @@ This is a Django application which is connected to a remote MySQL database and p
 2. Run `python manage.py runserver`
 
 # Accessing the REST API
-## GET API
+## GET API (Function Based)
 - Get a list of available hotels room
 - URL: localhost:8000/app/roomlist
 ![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/GET.png?raw=true)
 
-## POST API
+## POST API (Function Based)
 - Add a room entry with JSON request body
-- URL: localhost:8080/hotels
+- URL: localhost:8000/app/roomlist
 ```JSON
 {
-  "price": 200,
+  "price": 400,
   "type_id": 1
 }
 ```
 ![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/POST.png?raw=true)
 ![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/POST_result.png?raw=true)
 ![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/POST_result2.png?raw=true)
+
+## GET API (Class Based)
+- Get a list of available hotels room
+- URL: localhost:8000/app/classrooms
+![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/class_GET.png?raw=true)
+
+## POST API (Class Based)
+- Add a room entry with JSON request body
+- URL: localhost:8000/app/classrooms
+```JSON
+{
+  "price": 500,
+  "type_id": 2
+}
+```
+![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/class_POST.png?raw=true)
+![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/class_POST_result.png?raw=true)
+![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/class_POST_result2.png?raw=true)
+
+## SEARCH (Class Based)
+- Add a room entry with JSON request body
+- URL: localhost:8000/app/classrooms?search={id}
+- e.g. localhost:8000/app/classrooms?search=5
+![alt text](https://github.com/A00476407/DjangoDemo/blob/main/Screenshots/class_search.png?raw=true)
