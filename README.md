@@ -1,9 +1,15 @@
 # Django Assignment
 This is a Django application which is connected to a remote MySQL database and provides REST API to access the data.
 
-# Create virtual environment
+# Create virtual environment (if required)
+1. Run `py -m venv venv`
+
+# Run virtual environment
 1. Navigate to the `venv/Scripts/` directory
 2. Run `activate.bat`
+
+# Install Django (if required)
+1. After activating the environment, run `py -m pip install`
 
 # Database Setting 
 1. Naviagte to the `django_demo/django_demo/settings.py` directory
